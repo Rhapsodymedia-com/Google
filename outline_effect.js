@@ -1,8 +1,7 @@
 import {
 	BackSide,
 	Color,
-	ShaderMaterial,
-	UniformsUtils
+	ShaderMaterial
 } from 'three';
 
 /**
@@ -144,9 +143,7 @@ class OutlineEffect {
 
 			return new ShaderMaterial( {
 				type: 'OutlineEffect',
-				uniforms: UniformsUtils.merge( [
-					uniformsOutline
-				] ),
+				uniforms: uniformsOutline,
 				vertexShader: vertexShader,
 				fragmentShader: fragmentShader,
 				side: BackSide
@@ -481,6 +478,7 @@ class OutlineEffect {
  * @property {number} [defaultAlpha=1] - The outline alpha value.
  * @property {boolean} [defaultKeepAlive=false] - Whether to keep alive cached internal materials or not.
  **/
+
 
 
 export { OutlineEffect };
