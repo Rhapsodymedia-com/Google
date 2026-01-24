@@ -229,7 +229,7 @@ class OutlineEffect {
 			const geometry = object.geometry;
 			const hasNormals = ( geometry !== undefined ) && ( geometry.attributes.normal !== undefined );
 
-			return ( object.isMesh === true && object.material !== undefined && hasNormals === true &&  object.isInstancedMesh !== true);
+			return ( object.isMesh === true && object.material !== undefined && hasNormals === true &&  object.isStrokeMesh !== true);
 
 		}
 
@@ -537,4 +537,5 @@ class OutlineEffect {
 }
 
 export { OutlineEffect };
+
 
