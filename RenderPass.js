@@ -1,7 +1,7 @@
 import {
 	Color
 } from 'three';
-import { Pass } from './Pass.js';
+import { Pass } from 'three/addons/postprocessing/s';
 
 class RenderPass extends Pass {
 
@@ -103,3 +103,4 @@ class RenderPass extends Pass {
 }
 
 export { RenderPass };
+
