@@ -68,7 +68,13 @@ class RenderPass extends Pass {
 
 		}
 
-		renderer.render( this.scene, this.camera );
+        console.log(effect);
+        if(effect!=undefined){
+            effect.render( this.scene, this.camera );
+        }
+        else{
+            renderer.render( this.scene, this.camera );
+        }
 
 		// restore
 
